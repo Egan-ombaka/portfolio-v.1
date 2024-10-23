@@ -159,7 +159,7 @@ header{
     font-weight: 300;
     font-style: normal;
 }
-.downloadCv{
+#downloadCv{
     position: relative;
     left: 50%;
     top: -25%;
@@ -173,7 +173,7 @@ header{
     cursor: pointer;
     transition: color 0.5s ease;
 }
-.downloadCv:hover{
+#downloadCv:hover{
     border:2px solid #7df9ff;
 }
 .fa-square-github{
