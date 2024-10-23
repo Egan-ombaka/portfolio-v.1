@@ -231,7 +231,3 @@ header{
 #aboutSection button:hover{
     background-color: black;
 }
-#aboutSection button:active{
-    background-color: #7df9ff;
-    color: black;
-}
