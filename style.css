@@ -1,0 +1,237 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(images/wall-wallpaper-concrete-colored-painted-textured-concept.jpg);
+    width: 100dvw;
+    height: 100dvh;
+    cursor: default;
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: relative;
+    width: 70%;
+    height: 40px;
+    background-color: #323766;
+    left: 15%;
+    top: 2%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    border: none;
+    border-radius: 3px;
+
+}
+.logo{
+    position: relative;
+    display: inline-block;
+    color: hsl(0, 0%, 90%);
+    left: 2%;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+}
+#navigationBar{
+    display: inline-block;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+#navigationBar ul{
+    display: inline-block;
+}
+#navigationBar li{
+    display: inline-block;
+    list-style: none;
+}
+#navigationBar li a{
+    display: block;
+    text-decoration: none;
+    color: hsl(0, 0%, 90%);
+    font-weight: lighter;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#navigationBar ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #7df9ff;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease;
+}
+#navigationBar ul li a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+#navigationBar ul li a:hover{
+    color: #7df9ff;
+}
+#contactButton{
+    position: relative;
+    right:2% ;
+    width: 100px;
+    height: 25px;
+    border: none;
+    border-radius: 3px;
+    background-color: black;
+    color: hsl(0, 0%, 90%);
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+#contactButton:hover{
+    color: black;
+    background-color: #7df9ff;
+    font-weight: bolder;
+}
+
+/*Media Queries for small screens*/
+@media(max-width: 768px){
+    #navigationBar{
+        display: none;
+    }
+    header{
+        width: 90%;
+        left: 5%;
+    }
+}
+/*Home section style*/
+.profileImage{
+    position: relative;
+    width: 30%;
+    top: 10%;
+    left: 15%;
+    height: 60%;
+    border: none;
+    border-radius:3px ;
+}
+.profileName{
+    position: relative;
+    display: inline;
+    color: hsl(0, 0%, 90%);
+    top: -45%;
+    left: 20%;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+}
+.roleDescription{
+    position: relative;
+    display: inline-block;
+    color: hsl(0, 0%, 90%);
+    top: -42%;
+    left: 5%;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+}
+.profileDescription{
+    position: relative;
+    left: 50%;
+    top: -35%;
+    width: 35%;
+    color: hsl(0, 0%, 90%);
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.profileDescription2{
+    position: relative;
+    left: 50%;
+    top: -33%;
+    width: 35%;
+    color: hsl(0, 0%, 90%);
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.downloadCv{
+    position: relative;
+    left: 50%;
+    top: -25%;
+    width: 10%;
+    height: 30px;
+    background-color: #323766;
+    border: none;
+    border-radius: 3px;
+    color: hsl(0, 0%, 90%);
+    font-weight: bolder;
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+.downloadCv:hover{
+    border:2px solid #7df9ff;
+}
+.fa-square-github{
+    position: relative;
+    margin-left: 50px;
+    height: 35px;
+    color: hsl(0, 0%, 90%);
+    left: 50%;
+    top: -25%;
+}
+.fa-linkedin{
+    position: relative;
+    margin-left: 50px;
+    color: hsl(0, 0%, 90%);
+    height: 35px;
+    left: 50%;
+    top: -25%;
+}.fa-envelope{
+    position: relative;
+    margin-left: 50px;
+    height: 35px;
+    color: hsl(0, 0%, 90%);
+    left: 50%;
+    top: -25%;
+}
+.fa-file-arrow-down{
+    color: #7df9ff;
+}
+
+/* about section styling*/
+#aboutSection{
+    position: relative;
+    width: 70%;
+    height: 40px;
+    top: -19%;
+    border-radius: 5px;
+    background-color: #323766;
+    left: 15%;
+    align-items: center;
+    justify-content: center;
+}
+#aboutSection button{
+    position: relative;
+    margin-top: 5px;
+    cursor: pointer;
+    height: 30px;
+    width: 49%;
+    left: 1%;
+    color: hsl(0, 0%, 90%);
+    font-weight: bolder;
+    border: none;
+    background-color: #323766;
+    border-radius: 3px;
+}
+#aboutSection button:hover{
+    background-color: black;
+}
+#aboutSection button:active{
+    background-color: #7df9ff;
+    color: black;
+}
